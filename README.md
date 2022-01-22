@@ -34,67 +34,74 @@
   1. Dropping the entire columns for which the missing values are greater than 10%
   2. Dropping the entire rows for which few columns are missing 
   3. Splitting the data into train and test 
-# K Means Algorithm 
-  1. This Model is used to understand similarity between the players based on various attributes 
-# Linear Regression
-  1. Linear Regression is used to predict the potential of any player given other attributes of the player 
-# Decision Tree Regressor 
-  1. Decision Tree is one of those which can predict the continuous variable
-# Random Forest Regressor 
+## K Means Algorithm 
+   This Model is used to understand similarity between the players based on various attributes <br>
+ 
+ <img width="572" alt="01" src="https://user-images.githubusercontent.com/89437135/150624091-b7ac5f65-0300-44f5-8261-dae3ca07f68f.png">;
 
-# Support Vector Machine 
+## Linear Regression
 
+<img width="567" alt="02" src="https://user-images.githubusercontent.com/89437135/150624098-1459d138-4b72-4609-b080-a5f3641ac8db.png">;
+## Decision Tree Regressor 
+ 
+ <img width="574" alt="03" src="https://user-images.githubusercontent.com/89437135/150624103-373e8011-cf08-4460-95e8-2bcd6dea6784.png">;
+## Random Forest Regressor 
+<img width="575" alt="04" src="https://user-images.githubusercontent.com/89437135/150624105-f6d3f32c-65da-4035-aad5-55b8c90b374f.png">;
+
+## Support Vector Machine 
+
+<img width="569" alt="05" src="https://user-images.githubusercontent.com/89437135/150624110-54cdb90d-31b2-4fdc-92aa-79d8dc95ba35.png">;
 # Linear Programming 
-### Introduction
-  1. Linear programming has one of the best applications in sports analytics as it is important to get all the players subject to few constraints
-  2. Linear programming not only allows us to get the best players but also helps us to make decisions objectively without any inherent bias 
-### Objective 
-  1. The Objective of using linear programming is to find the dream team of a league based on the potential of the player with the given money and other constraints
-### Data Used
-  1. In this project, the league that is being used is about “Spain Primera Division” where there are 20 clubs and 645 individual players 
-  2. In the preprocessing data, the labels of clubs are being converted into numeric formats to use them further 
-  3. The variables considered for constraining the objective function are
-      a.Goalkeeping handling
-      b.Defending sliding tackle
-      c.Skill dribbling
-      d.Attacking volleys
-      e.Potential 
-Linear Programming Methodology
-  1.	Creating Variables 
-      a.	For every row, there is a corresponding key that is created
-      b.	The key is created as binary variable 
-  2.	Objective Function
-      a.	The objective function consists of product key (which is defined in step 1) and players’ corresponding potential
-      b.	The objective is to maximize the function described above
-  3.	Constraints 
-      a.	Team total purse
-            i.	There would only be limited purse available to set up the team 
-            ii.	This step involves the multiplication of each players’ worth with the players’ key
-            iii.	The generated equation should not exceed the expected budget
-      b.	One Goalkeeper
-            i.	A team must have a goalkeeper 
-            ii.	A good goalkeeper is someone whose goalkeeping skills are more than 50 and rest other variables values are less 
-      c.	Three Mid Field players
-            i.	A team must have at least three forward players 
-            ii.	A good mid field player must have dribbling skills of more than 50 whereas other variables’ values can be less than 50 
-      d.	Three Defensive players
-            i.	A team must have three defensive players 
-            ii.	A good defensive players must have defending sliding tackle skills of more than 50 whereas other variables’ values can be less than 50
-      e.	Three Attacking players
-            i.	A team must have three attacking players
-            ii.	A good attacking player must have attacking volleys more than 50 and dribbling more than 20 
-      f.	Total number of players in team 
-            i.	The total team comprises 12 players 
-  4.	Maximize the above defined objective function subject to constraints in step 3
+## Introduction
+  1. Linear programming has one of the best applications in sports analytics as it is important to get all the players subject to few constraints <br>
+  2. Linear programming not only allows us to get the best players but also helps us to make decisions objectively without any inherent bias <br>
+## Objective 
+  1. The Objective of using linear programming is to find the dream team of a league based on the potential of the player with the given money and other constraints<br>
+## Data Used
+  1. In this project, the league that is being used is about “Spain Primera Division” where there are 20 clubs and 645 individual players <br>
+  2. In the preprocessing data, the labels of clubs are being converted into numeric formats to use them further <br>
+  3. The variables considered for constraining the objective function are<br>
+      a.Goalkeeping handling<br>
+      b.Defending sliding tackle<br>
+      c.Skill dribbling<br>
+      d.Attacking volleys<br>
+      e.Potential <br>
+Linear Programming Methodology<br>
+  1.	Creating Variables <br>
+      a.	For every row, there is a corresponding key that is created<br>
+      b.	The key is created as binary variable <br>
+  2.	Objective Function<br>
+      a.	The objective function consists of product key (which is defined in step 1) and players’ corresponding potential<br>
+      b.	The objective is to maximize the function described above<br>
+  3.	Constraints <br>
+      a.	Team total purse<br>
+            i.	There would only be limited purse available to set up the team <br>
+            ii.	This step involves the multiplication of each players’ worth with the players’ key <br>
+            iii.	The generated equation should not exceed the expected budget<br>
+      b.	One Goalkeeper<br>
+            i.	A team must have a goalkeeper <br>
+            ii.	A good goalkeeper is someone whose goalkeeping skills are more than 50 and rest other variables values are less <br>
+      c.	Three Mid Field players<br>
+            i.	A team must have at least three forward players <br>
+            ii.	A good mid field player must have dribbling skills of more than 50 whereas other variables’ values can be less than 50 <br>
+      d.	Three Defensive players<br>
+            i.	A team must have three defensive players <br>
+            ii.	A good defensive players must have defending sliding tackle skills of more than 50 whereas other variables’ values can be less than 50<br>
+      e.	Three Attacking players<br>
+            i.	A team must have three attacking players<br>
+            ii.	A good attacking player must have attacking volleys more than 50 and dribbling more than 20 <br>
+      f.	Total number of players in team <br>
+            i.	The total team comprises 12 players <br>
+  4.	Maximize the above defined objective function subject to constraints in step 3<br>
 ### Insights
 •	If the purse value of the club is “84000000” then the maximum possible total potential of team of 12 players is 1021
 •	The following is the list of players which can be a dream team as per our objective function 
+<img width="497" alt="06" src="https://user-images.githubusercontent.com/89437135/150624116-6a8ca48f-3eb0-4dd3-9365-107656068a01.png">
 
 # Results 
-  1.From the analysis, it is clear that Airbnb implemented strategies which makes them unique in responding to the pandemic <br>
-  2.Sentiment dropped after March 2020, but as the company takes remedial steps, sentiment increased over time <br>
-  3.Top positive and negative comments did not change much in pre and post Covid  <br>
-  4.Dirty and Crowded are highlighted negative comments post-Covid which can be suggestion to Airbnb hotels which are having low sentiment scores <br>
+  1. Graph Structures are very helpful in Network analysis 
+  2. Optimization particularly in sports plays a major role in finding the best combinations with the specified constraints 
 
+# Thank You!
 
   
